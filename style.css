@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'gilroy';
+    src: url(style/fonts/Handjet-Black.ttf);
+}
+body{
+    background: linear-gradient(black, rgb(0, 20, 22));
+    background-size:cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed; 
+    width: 100%;
+    font-family: 'gilroy';
+}
+.panel{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    width: 10rem;
+    height: 30rem;
+    color:aliceblue;
+    transition: all 0.5s;
+}
+.point-close{
+    display: block;
+    position: static;
+    margin-left: 8rem;
+    cursor: default;
+    margin-top: 2rem;
+    font-size: 40px;
+    font-family: 'gilroy';
+    transition: all 0.5s;
+}
+.information-panel{
+    width: 0rem;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 25px;
+    color:aliceblue;
+    display: grid;
+    grid-gap: 2rem;
+    transition: all 0.5s;
+}
+.panel:hover .information-panel{
+    width: 10rem;
+}
+.panel:hover .point-close{
+    margin-left: 0rem;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+.about{
+    color:white;
+    text-decoration: none;
+}
+.conn{
+    color: white;
+    text-decoration: none;
+}
+.inf1{
+    background: linear-gradient(rgba(0, 47, 51, 0), rgba(29, 29, 29, 0));
+    margin-top: 4rem;
+    cursor: pointer;
+    width: 9.85rem;
+    padding: 1rem 0rem 1rem 0rem;
+    transition: all 0.4s;
+    border-radius: 0rem;
+}
+.inf2{
+    cursor: pointer;
+    width: 9.95rem;
+    padding: 1rem 0rem 1rem 0rem;
+    transition: all 0.4s;
+    border-radius: 0rem;
+}
+.inf1:hover{
+    background: linear-gradient(rgba(0, 47, 51, 0.527), rgb(29, 29, 29, 0.527));
+    border-radius: 0rem;
+    border-right:2px solid rgba(255, 255, 255, 0.315);
+    text-shadow: 0 0px 20px rgb(255, 255, 255);
+}
+.inf2:hover{
+    background: linear-gradient(rgb(0, 47, 51, 0.527), rgb(29, 29, 29, 0.527));
+    border-radius: 0rem;
+    border-right:2px solid rgba(255, 255, 255, 0.315);
+    text-shadow: 0 0px 20px rgb(255, 255, 255);
+}
+.content{
+    text-align: center;
+    color: aliceblue;
+    width: 100%;
+    height: 100%;
+}
+.information-content{
+    width: 20rem;
+    margin: -10% 0rem 0rem 0rem;
+        text-transform: uppercase;
+       background-image: linear-gradient(
+         -225deg,
+         #2315572d 0%,
+         #43107aa6 29%,
+         #ff1362b9 67%,
+         #fff700a9 100%
+       );
+       background-size: auto auto;
+       background-clip: border-box;
+       background-size: 200% auto;
+       color: #fff;
+       background-clip: text;
+       text-fill-color: transparent;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       animation: textclip 5s linear infinite;
+       display: inline-block;
+           font-size: 40px;
+     }
+     
+     @keyframes textclip {
+       to {
+         background-position: 200% center;
+       }
+     }

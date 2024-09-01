@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'gilroy';
+    src: url(fonts/Handjet-Black.ttf);
+}
+body{
+    background: linear-gradient(black, rgb(0, 20, 22));
+    background-size:cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed; 
+    width: 100%;
+    font-family: 'gilroy';
+}
+.panel{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    width: 10rem;
+    height: 30rem;
+    color:aliceblue;
+    transition: all 0.5s;
+}
+.point-close{
+    display: block;
+    position: static;
+    margin-left: 8rem;
+    cursor: default;
+    margin-top: 2rem;
+    font-size: 40px;
+    font-family: 'gilroy';
+    transition: all 0.5s;
+}
+.information-panel{
+    width: 0rem;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 25px;
+    color:aliceblue;
+    display: grid;
+    grid-gap: 2rem;
+    transition: all 0.5s;
+}
+.panel:hover .information-panel{
+    width: 10rem;
+}
+.panel:hover .point-close{
+    margin-left: 0rem;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+.about{
+    color:white;
+    text-decoration: none;
+}
+.conn{
+    color: white;
+    text-decoration: none;
+}
+.inf1{
+    background: linear-gradient(rgba(0, 47, 51, 0), rgba(29, 29, 29, 0));
+    margin-top: 4rem;
+    cursor: pointer;
+    width: 9.85rem;
+    padding: 1rem 0rem 1rem 0rem;
+    transition: all 0.4s;
+    border-radius: 0rem;
+}
+.inf2{
+    cursor: pointer;
+    width: 9.95rem;
+    padding: 1rem 0rem 1rem 0rem;
+    transition: all 0.4s;
+    border-radius: 0rem;
+}
+.inf1:hover{
+    background: linear-gradient(rgba(0, 47, 51, 0.527), rgb(29, 29, 29, 0.527));
+    border-radius: 0rem;
+    border-right:2px solid rgba(255, 255, 255, 0.315);
+    text-shadow: 0 0px 20px rgb(255, 255, 255);
+}
+.inf2:hover{
+    background: linear-gradient(rgb(0, 47, 51, 0.527), rgb(29, 29, 29, 0.527));
+    border-radius: 0rem;
+    border-right:2px solid rgba(255, 255, 255, 0.315);
+    text-shadow: 0 0px 20px rgb(255, 255, 255);
+}
+.content{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    width: 100%;
+    height: 100%;
+}
+.link-github, .link-telegram, .link-email{
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+    filter: invert(100%) sepia(0%) saturate(000%) hue-rotate(1deg) brightness(99%) contrast(100%);
+}
+.link-github:hover,.link-email:hover, .link-telegram:hover{
+    filter: invert(00%) sepia(0%) saturate(000%) hue-rotate(1deg) brightness(99%) contrast(100%);
+}
+.gihub, .tg, .mail{
+    width: 2rem;
+    height: 2rem;
+}
+
+.github, .telegram, .email{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+}
+.contact{
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    width: 15%;
+    background-color: rgba(90, 90, 90, 0.267);
+    margin-left: 40%;
+    margin-top: -10rem;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.212);
+    transition: all 1s;
+}
+.contact:hover{
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
