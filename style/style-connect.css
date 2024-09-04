@@ -12,6 +12,7 @@ body{
     background-attachment: fixed; 
     width: 100%;
     font-family: 'gilroy';
+    cursor: url(img/icons8-select-64.png), default;
 }
 .panel{
     display: block;
@@ -28,7 +29,7 @@ body{
     display: block;
     position: static;
     margin-left: 8rem;
-    cursor: default;
+    cursor: url(img/crosshair\(1\).png), default;
     margin-top: 2rem;
     font-size: 40px;
     font-family: 'gilroy';
@@ -53,24 +54,26 @@ body{
     transform: rotate(270deg);
 }
 .about{
+    cursor: url(style/img/crosshair.png), pointer;
     color:white;
     text-decoration: none;
 }
 .conn{
+    cursor: url(style/img/crosshair.png), pointer;
     color: white;
     text-decoration: none;
 }
 .inf1{
     background: linear-gradient(rgba(0, 47, 51, 0), rgba(29, 29, 29, 0));
     margin-top: 4rem;
-    cursor: pointer;
+    cursor: url(style/img/crosshair.png), pointer;
     width: 9.85rem;
     padding: 1rem 0rem 1rem 0rem;
     transition: all 0.4s;
     border-radius: 0rem;
 }
 .inf2{
-    cursor: pointer;
+    cursor: url(style/img/crosshair.png), pointer;
     width: 9.95rem;
     padding: 1rem 0rem 1rem 0rem;
     transition: all 0.4s;
@@ -105,6 +108,7 @@ body{
     filter: invert(100%) sepia(0%) saturate(000%) hue-rotate(1deg) brightness(99%) contrast(100%);
     transition: all 0.5s;
     text-decoration: none;
+    cursor: url(style/img/crosshair.png), pointer;
 }
 .link-github:hover, .gihub{
     filter: invert(000%) sepia(0%) saturate(000%) hue-rotate(1deg) brightness(99%) contrast(100%);
@@ -122,6 +126,7 @@ body{
 }
 
 .github, .telegram, .email{
+    cursor: url(style/img/crosshair.png), pointer;
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 20px;

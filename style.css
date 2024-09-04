@@ -1,3 +1,6 @@
+html{
+  cursor: url(style/img/icons8-select-64.png), default;
+}
 @font-face {
     font-family: 'gilroy';
     src: url(style/fonts/Handjet-Black.ttf);
@@ -12,8 +15,11 @@ body{
     background-attachment: fixed; 
     width: 100%;
     font-family: 'gilroy';
-    /* cursor: none; */
+    /* cursor: url(style/img/icons8-select-64.png), default; */
 }	
+*{
+  cursor: url(style/img/icons8-select-64.png), pointer;
+}
 #stars { 
 background:#477ab980;
 width:100%;
@@ -73,14 +79,14 @@ transition: all 0.4s ease-in-out;
 .inf1{
     background: linear-gradient(rgba(0, 47, 51, 0), rgba(29, 29, 29, 0));
     margin-top: 4rem;
-    cursor: pointer;
+    cursor: url(style/img/crosshair.png), pointer;
     width: 9.85rem;
     padding: 1rem 0rem 1rem 0rem;
     transition: all 0.4s;
     border-radius: 0rem;
 }
 .inf2{
-    cursor: pointer;
+    cursor: url(style/img/crosshair.png), pointer;
     width: 9.95rem;
     padding: 1rem 0rem 1rem 0rem;
     transition: all 0.4s;
