@@ -12,7 +12,6 @@ body{
     background-attachment: fixed; 
     width: 100%;
     font-family: 'gilroy';
-    cursor: url(img/icons8-select-64.png), default;
 }
 .panel{
     display: block;
@@ -29,7 +28,6 @@ body{
     display: block;
     position: static;
     margin-left: 8rem;
-    cursor: url(img/crosshair\(1\).png), default;
     margin-top: 2rem;
     font-size: 40px;
     font-family: 'gilroy';
@@ -54,26 +52,22 @@ body{
     transform: rotate(270deg);
 }
 .about{
-    cursor: url(style/img/crosshair.png), pointer;
     color:white;
     text-decoration: none;
 }
 .conn{
-    cursor: url(style/img/crosshair.png), pointer;
     color: white;
     text-decoration: none;
 }
 .inf1{
     background: linear-gradient(rgba(0, 47, 51, 0), rgba(29, 29, 29, 0));
     margin-top: 4rem;
-    cursor: url(style/img/crosshair.png), pointer;
     width: 9.85rem;
     padding: 1rem 0rem 1rem 0rem;
     transition: all 0.4s;
     border-radius: 0rem;
 }
 .inf2{
-    cursor: url(style/img/crosshair.png), pointer;
     width: 9.95rem;
     padding: 1rem 0rem 1rem 0rem;
     transition: all 0.4s;
@@ -96,10 +90,11 @@ body{
     align-items: center;
     text-align: center;
     color: aliceblue;
-    width: 100%;
     height: 100%;
+    min-width: 100%;
 }
 .link-github, .link-telegram, .link-email{
+    text-decoration: none;
     justify-content: center;
     align-items: center;    
     text-align: center;
@@ -107,8 +102,6 @@ body{
     gap: 1rem;
     filter: invert(100%) sepia(0%) saturate(000%) hue-rotate(1deg) brightness(99%) contrast(100%);
     transition: all 0.5s;
-    text-decoration: none;
-    cursor: url(style/img/crosshair.png), pointer;
 }
 .link-github:hover, .gihub{
     filter: invert(000%) sepia(0%) saturate(000%) hue-rotate(1deg) brightness(99%) contrast(100%);
@@ -126,26 +119,30 @@ body{
 }
 
 .github, .telegram, .email{
-    cursor: url(style/img/crosshair.png), pointer;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 .contact{
     border-radius: 0.75rem;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
-    width: 15%;
-    background-color: rgba(90, 90, 90, 0.548);
-    margin-left: 40%;
-    margin-top: -10rem;
+    padding: 5rem;
+    min-width: 20%;
+    max-width: 25%;
+    background-color: rgba(90, 90, 90, 0.39);
+    margin-left: 30%;
+    margin-top: -15rem;
     box-shadow: 0 0 50px rgba(255, 255, 255, 0.212);
     transition: all 0.7s;
+    text-decoration: none;
 }
 .contact:hover{
     box-shadow: 0 0 20px rgb(255, 255, 255);
-    background-color: rgba(90, 90, 90, 0.849);
+    background-color: rgb(90, 90, 90);
     border-radius: 3rem;
 }
 .light {
@@ -153,7 +150,7 @@ body{
     width: 0px;
     opacity: .75;
     background-color: white;
-    box-shadow: #e9f1f1 0px 0px 20px 2px;
+    box-shadow: #b930b9 0px 0px 20px 2px;
     opacity: 0;
     top: 100vh;
     bottom: 0px;
