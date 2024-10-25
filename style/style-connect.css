@@ -99,9 +99,12 @@ body{
     align-items: center;    
     text-align: center;
     display: flex;
-    gap: 1rem;
+    gap: 5rem;
     filter: invert(100%) sepia(0%) saturate(000%) hue-rotate(1deg) brightness(99%) contrast(100%);
     transition: all 0.5s;
+}
+.link-github:hover, .link-telegram:hover, .link-email:hover{
+  gap: 1rem;
 }
 .link-github:hover, .gihub{
     filter: invert(000%) sepia(0%) saturate(000%) hue-rotate(1deg) brightness(99%) contrast(100%);

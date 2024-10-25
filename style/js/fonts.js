@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
           }
 
       }
-      setTimeout(typeWriter, 75); 
+      setTimeout(typeWriter, 55); 
   }
 
   typeWriter();
