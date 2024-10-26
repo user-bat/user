@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   const textElement = document.getElementById('typetext');
-  const text = "hi, my name is Roma, I am a beginner frontend developer, I live in Russia and I am 18 years old. Nick: user?bat ";
+  const text = "hi, my name is Dima, I am a beginner frontend developer, I live in Russia and I am 18 years old. Nick: user?bat, [aka] ShlUZ ";
   const span = document.createElement('span');
   
   span.classList.add('span');
