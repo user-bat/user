@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   const textElement = document.getElementById('typetext');
-  const text = "hi, my name is Dima, I am a beginner frontend developer, I live in Russia and I am 18 years old. Nick: user?bat, [aka] ShlUZ ";
+  const text = "hi, my name is Dima, I am a beginner frontend developer, I live in Russia and I am 18 years old. Nick: user?bat, faska ";
   const span = document.createElement('span');
   
   span.classList.add('span');
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
           }
 
       }
-      setTimeout(typeWriter, 55); 
+      setTimeout(typeWriter, 40); 
   }
 
   typeWriter();

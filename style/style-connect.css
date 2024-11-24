@@ -99,12 +99,20 @@ body{
     align-items: center;    
     text-align: center;
     display: flex;
-    gap: 5rem;
+    gap: 1rem;
+    margin-left: 5rem;
+    width: 3rem;
+    overflow: hidden;
     filter: invert(100%) sepia(0%) saturate(000%) hue-rotate(1deg) brightness(99%) contrast(100%);
     transition: all 0.5s;
 }
 .link-github:hover, .link-telegram:hover, .link-email:hover{
-  gap: 1rem;
+  width: 30rem;
+  margin-left: -10rem;
+}
+.link-email:hover{
+  width: 30rem;
+  margin-left: -15rem;
 }
 .link-github:hover, .gihub{
     filter: invert(000%) sepia(0%) saturate(000%) hue-rotate(1deg) brightness(99%) contrast(100%);
@@ -115,8 +123,21 @@ body{
 .link-email:hover, .mail{
     filter: invert(000%) sepia(0%) saturate(000%) hue-rotate(1deg) brightness(99%) contrast(100%);
 }
-.gihub, .tg, .mail{
+.gihub{
+  margin-left: 4rem;
     width: 2rem;
+    height: 2rem;
+    filter: invert(100%) sepia(0%) saturate(000%) hue-rotate(1deg) brightness(99%) contrast(100%);
+}
+.tg{
+  margin-left: 5rem;
+  width: 2rem;
+    height: 2rem;
+    filter: invert(100%) sepia(0%) saturate(000%) hue-rotate(1deg) brightness(99%) contrast(100%);
+}
+.mail{
+  margin-left: 12.5rem;
+  width: 2rem;
     height: 2rem;
     filter: invert(100%) sepia(0%) saturate(000%) hue-rotate(1deg) brightness(99%) contrast(100%);
 }
@@ -134,10 +155,9 @@ body{
     justify-content: center;
     align-items: center;
     padding: 5rem;
-    min-width: 20%;
-    max-width: 25%;
-    background-color: rgba(90, 90, 90, 0.39);
-    margin-left: 32.5%;
+    max-width: 10%;
+    background-color: rgba(90, 90, 90, 0.425);
+    margin-left: 42%;
     margin-top: -15rem;
     box-shadow: 0 0 50px rgba(255, 255, 255, 0.212);
     transition: all 0.7s;
@@ -147,6 +167,7 @@ body{
     box-shadow: 0 0 20px rgb(255, 255, 255);
     background-color: rgb(90, 90, 90);
     border-radius: 3rem;
+    max-width: 10%;
 }
 .light {
     position: absolute;
