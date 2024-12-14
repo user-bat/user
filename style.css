@@ -1,281 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
 
-@font-face {
-    font-family: 'gilroy';
-    src: url(style/fonts/Handjet-Black.ttf);
+html{
+    scroll-behavior: smooth;
 }
-body{
-    background: linear-gradient(black, rgb(0, 20, 22));
-    background-size:cover;
-    background-repeat: no-repeat; 
-    background-position: center;
+
+*{
     margin: 0;
     padding: 0;
-    background-attachment: fixed; 
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    font-size: 14px;
+}
+
+header{
     width: 100%;
-    font-family: 'gilroy';
-}	
-#stars { 
-background:#477ab980;
-width:100%;
--webkit-transition: all 0.4s ease-in-out;
--moz-transition: all 0.4s ease-in-out;
--ms-transition: all 0.4s ease-in-out;
--o-transition: all 0.4s ease-in-out;
-transition: all 0.4s ease-in-out;
+    height: 100vh;
+    background-color: #25362e;
+    color: #fff;
 }
-.panel{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
-    width: 10rem;
-    height: 30rem;
-    color:aliceblue;
-    transition: all 0.5s;
-}
-.point-close{
-    display: block;
-    position: static;
-    margin-left: 8rem;
-    cursor: default;
-    margin-top: 2rem;
-    font-size: 40px;
-    font-family: 'gilroy';
-    transition: all 0.5s;
-}
-.information-panel{
-    width: 0rem;
-    overflow: hidden;
-    font-weight: 400;
-    font-size: 25px;
-    color:aliceblue;
-    display: grid;
-    grid-gap: 2rem;
-    transition: all 0.5s;
-}
-.panel:hover .information-panel{
-    width: 10rem;
-}
-.panel:hover .point-close{
-    margin-left: 0rem;
-    -webkit-transform: rotate(270deg);
-    transform: rotate(270deg);
-}
-.about{
-    color:white;
-    text-decoration: none;
-}
-.conn{
-    color: white;
-    text-decoration: none;
-}
-.inf1{
-    background: linear-gradient(rgba(0, 47, 51, 0), rgba(29, 29, 29, 0));
-    margin-top: 4rem;
-    width: 9.85rem;
-    padding: 1rem 0rem 1rem 0rem;
-    transition: all 0.4s;
-    border-radius: 0rem;
-}
-.inf2{
-    width: 9.95rem;
-    padding: 1rem 0rem 1rem 0rem;
-    transition: all 0.4s;
-    border-radius: 0rem;
-}
-.inf1:hover{
-    background: linear-gradient(rgba(0, 47, 51, 0.527), rgb(29, 29, 29, 0.527));
-    border-radius: 0rem;
-    border-right:2px solid rgba(255, 255, 255, 0.315);
-    text-shadow: 0 0px 20px rgb(255, 255, 255);
-}
-.inf2:hover{
-    background: linear-gradient(rgb(0, 47, 51, 0.527), rgb(29, 29, 29, 0.527));
-    border-radius: 0rem;
-    border-right:2px solid rgba(255, 255, 255, 0.315);
-    text-shadow: 0 0px 20px rgb(255, 255, 255);
-}
-.content{
-    text-align: center;
-    color: aliceblue;
+
+header #particles{
+    position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
 }
-.information-content{
-    width: 20rem;
-    margin: -10% 0rem 0rem 0rem;
-        text-transform: uppercase;
-       background-image: linear-gradient(
-         -225deg,
-         #2315572d 0%,
-         #43107aa6 29%,
-         #ff1362b9 67%,
-         #fff700a9 100%
-       );
-       background-size: auto auto;
-       background-clip: border-box;
-       background-size: 200% auto;
-       color: #fff;
-       background-clip: text;
-       /* text-fill-color: transparent; */
-       -webkit-background-clip: text;
-       -webkit-text-fill-color: transparent;
-       animation: textclip 5s linear infinite;
-       display: inline-block;
-           font-size: 40px;
-     }
-     
-     @keyframes textclip {
-       to {
-         background-position: 200% center;
-       }
-     }
-     .light {
-        position: absolute;
-        width: 0px;
-        opacity: .75;
-        background-color: white;
-        box-shadow: #e9f1f1 0px 0px 20px 2px;
+
+header .info-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    height: 100vh;
+}
+
+header .info-text h1{
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: 'Ubuntu';
+}
+
+header .info-text h3{
+    font-size: 1.5rem;
+}
+
+header .info-text .scroll{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    color: #fff;
+    transform: translate(0, -50%);
+    transition: all 0.5s;
+}
+
+header .info-text .scroll:hover{
+    opacity: 0.5;
+}
+
+header .info-text .scroll::before{
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    z-index: -1;
+    content: '';
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100%{
         opacity: 0;
-        top: 100vh;
-        bottom: 0px;
-        left: 0px;
-        right: 0px;
-        margin: auto;
     }
-    
-    .x1{
-      -webkit-animation: floatUp 4s infinite linear;
-      -moz-animation: floatUp 4s infinite linear;
-      -o-animation: floatUp 4s infinite linear;
-      animation: floatUp 4s infinite linear;
-       -webkit-transform: scale(1.0);
-       -moz-transform: scale(1.0);
-       -o-transform: scale(1.0);
-      transform: scale(1.0);
+    15%, 45%{
+        opacity: 1;
     }
-    
-    .x2{
-      -webkit-animation: floatUp 7s infinite linear;
-      -moz-animation: floatUp 7s infinite linear;
-      -o-animation: floatUp 7s infinite linear;
-      animation: floatUp 7s infinite linear;
-      -webkit-transform: scale(1.6);
-      -moz-transform: scale(1.6);
-      -o-transform: scale(1.6);
-      transform: scale(1.6);
-      left: 15%;
+    60%{
+        box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.1);
+        opacity: 0;
     }
-    
-    .x3{
-      -webkit-animation: floatUp 2.5s infinite linear;
-      -moz-animation: floatUp 2.5s infinite linear;
-      -o-animation: floatUp 2.5s infinite linear;
-      animation: floatUp 2.5s infinite linear;
-      -webkit-transform: scale(.5);
-      -moz-transform: scale(.5);
-      -o-transform: scale(.5);
-      transform: scale(.5);
-      left: -15%;
+}
+
+#about, #features{
+    background-color: #25362e;
+    padding: 40px;
+}
+
+#about .header,  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#about .header h1,  .header h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#about .header a, .header a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 10px 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+#about .header a:hover,  .header a:hover{
+    border-color: #fff;
+    box-shadow: none;
+}
+
+#about .card,  .card{
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    display: flex;
+    gap: 30px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#about .card:hover, .card:hover{
+    border-color: #fff;
+    box-shadow: none;
+}
+
+#about .card img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#about .card .info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#about .card .info h1,  .card .info h1{
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Ubuntu';
+}
+
+#about .card .info p, .card .info p{
+    color: #ccc;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+.scroll-top{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #131d1494;
+    color: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    padding: 16px 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.scroll-top:hover{
+    border-color: #fff;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 720px) {
+    header .info-text h1{
+        font-size: 4rem;
     }
-    
-    .x4{
-      -webkit-animation: floatUp 4.5s infinite linear;
-      -moz-animation: floatUp 4.5s infinite linear;
-      -o-animation: floatUp 4.5s infinite linear;
-      animation: floatUp 4.5s infinite linear;
-      -webkit-transform: scale(1.2);
-      -moz-transform: scale(1.2);
-      -o-transform: scale(1.2);
-      transform: scale(1.2);
-      left: -34%;
+
+    header .info-text h3{
+        font-size: 1.1rem;
     }
-    
-    .x5{
-      -webkit-animation: floatUp 8s infinite linear;
-      -moz-animation: floatUp 8s infinite linear;
-      -o-animation: floatUp 8s infinite linear;
-      animation: floatUp 8s infinite linear;
-      -webkit-transform: scale(2.2);
-      -moz-transform: scale(2.2);
-      -o-transform: scale(2.2);
-      transform: scale(2.2);
-      left: -57%;
+
+    #about .card{
+        flex-direction: column;
+        align-items: center;
     }
-    
-    .x6{
-      -webkit-animation: floatUp 3s infinite linear;
-      -moz-animation: floatUp 3s infinite linear;
-      -o-animation: floatUp 3s infinite linear;
-      animation: floatUp 3s infinite linear;
-      -webkit-transform: scale(.8);
-      -moz-transform: scale(.8);
-      -o-transform: scale(.8);
-      transform: scale(.8);
-      left: -81%;
+
+    #about .card img{
+        max-width: 150px;
+        max-height: 150px;
     }
-    
-    .x7{
-      -webkit-animation: floatUp 5.3s infinite linear;
-      -moz-animation: floatUp 5.3s infinite linear;
-      -o-animation: floatUp 5.3s infinite linear;
-      animation: floatUp 5.3s infinite linear;
-      -webkit-transform: scale(3.2);
-      -moz-transform: scale(3.2);
-      -o-transform: scale(3.2);
-      transform: scale(3.2);
-      left: 37%;
-    }
-    
-    .x8{
-      -webkit-animation: floatUp 4.7s infinite linear;
-      -moz-animation: floatUp 4.7s infinite linear;
-      -o-animation: floatUp 4.7s infinite linear;
-      animation: floatUp 4.7s infinite linear;
-      -webkit-transform: scale(1.7);
-      -moz-transform: scale(1.7);
-      -o-transform: scale(1.7);
-      transform: scale(1.7);
-      left: 62%;
-    }
-    
-    .x9{
-      -webkit-animation: floatUp 4.1s infinite linear;
-      -moz-animation: floatUp 4.1s infinite linear;
-      -o-animation: floatUp 4.1s infinite linear;
-      animation: floatUp 4.1s infinite linear;
-      -webkit-transform: scale(0.9);
-      -moz-transform: scale(0.9);
-      -o-transform: scale(0.9);
-      transform: scale(0.9);
-      left: 85%;
-    }
-    @-webkit-keyframes floatUp{
-        0%{top: 100vh; opacity: 0;}
-        25%{opacity: 1;}
-        50%{top: 0vh; opacity: .8;}
-        75%{opacity: 1;}
-        100%{top: -100vh; opacity: 0;}
-      }
-      @-moz-keyframes floatUp{
-        0%{top: 100vh; opacity: 0;}
-        25%{opacity: 1;}
-        50%{top: 0vh; opacity: .8;}
-        75%{opacity: 1;}
-        100%{top: -100vh; opacity: 0;}
-      }
-      @-o-keyframes floatUp{
-        0%{top: 100vh; opacity: 0;}
-        25%{opacity: 1;}
-        50%{top: 0vh; opacity: .8;}
-        75%{opacity: 1;}
-        100%{top: -100vh; opacity: 0;}
-      }
-      @keyframes floatUp{
-        0%{top: 100vh; opacity: 0;}
-        25%{opacity: 1;}
-        50%{top: 0vh; opacity: .8;}
-        75%{opacity: 1;}
-        100%{top: -100vh; opacity: 0;}
-      }
+
+}
+
+.link-telegram:hover, .tg{
+    filter: invert(000%) sepia(5%) saturate(123%) hue-rotate(3deg) brightness(1000%) contrast(100%);
+}
+.link-telegram:hover{
+    width: 30rem;
+    margin-left: -10rem;
+}
+.tg{
+    margin-left: 5rem;
+    width: 2rem;
+      height: 2rem;
+      filter: invert(100%) sepia(100%) saturate(1300%) hue-rotate(10deg) brightness(50%) contrast(100%);
+  }
+  .telegram{
+    color: rgb(22, 87, 185);
+    text-decoration: none;
+    font-size: 18px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.link-telegram{
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+    margin-left: 5rem;
+    width: 3rem;
+    overflow: hidden;
+    filter: invert(000%) sepia(0%) saturate(000%) hue-rotate(1deg) brightness(99%) contrast(100%);
+    transition: all 0.5s;
+}
+.connect-link{
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+    margin-top: -2rem;
+}
