@@ -210,7 +210,7 @@ header .info-text .scroll::before{
 }
 .link-telegram:hover{
     width: 13rem;
-    margin-left: -1rem;
+    margin-left: 0rem;
 }
 .tg{
     margin-left: 5rem;
