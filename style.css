@@ -168,7 +168,7 @@ header .info-text .scroll::before{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #131d1494;
+    background-color: #181824;
     color: #fff;
     border: 1px solid transparent;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
@@ -243,4 +243,17 @@ header .info-text .scroll::before{
     justify-content: center;
     margin-left: 5rem;
     margin-top: -2rem;
+}
+@keyframes pulse-text {
+    0%, 100%{
+        color: #5e5e5e;
+    }
+    30%, 60%{
+        color: #ccffbdab;
+    }
+
+}
+.name-text{
+    text-decoration: none;
+    animation: pulse-text 2s infinite;
 }
