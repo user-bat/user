@@ -40,6 +40,7 @@ header .info-text{
 }
 
 header .info-text h1{
+    text-overflow: unset;
     font-size: 5rem;
     font-weight: 500;
     font-family: 'Ubuntu';
@@ -47,6 +48,7 @@ header .info-text h1{
 
 header .info-text h3{
     font-size: 1.5rem;
+    text-overflow: unset;
 }
 
 header .info-text .scroll{
@@ -91,6 +93,7 @@ header .info-text .scroll::before{
 #about, #features{
     background-color:  var(--section-bg-color);
     padding: 40px;
+    
 }
 
 #about .header,  .header{
@@ -101,12 +104,14 @@ header .info-text .scroll::before{
 }
 
 #about .header h1,  .header h1{
+    text-overflow: unset;
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
 }
 
 #about .header a, .header a{
+    text-overflow: unset;
     text-decoration: none;
     font-size: 1.3em;
     color: #ffffff;
@@ -147,6 +152,7 @@ header .info-text .scroll::before{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    text-overflow: unset;
 }
 
 #about .card .info h1,  .card .info h1{
@@ -155,12 +161,14 @@ header .info-text .scroll::before{
     font-size: 1.7rem;
     font-weight: bold;
     font-family: 'Ubuntu';
+    text-overflow: unset;
 }
 
 #about .card .info p, .card .info p{
     color: #ffffff;
     font-size: 1.25rem;
     line-height: 1.8rem;
+    text-overflow: unset;
 }
 
 .scroll-top{
