@@ -18,7 +18,7 @@ body{
 header{
     width: 100%;
     height: 100vh;
-    background-color: #252536;
+    background-color:  var(--header-bg-color);
     color: #fff;
 }
 
@@ -89,7 +89,7 @@ header .info-text .scroll::before{
 }
 
 #about, #features{
-    background-color: #252536;
+    background-color:  var(--section-bg-color);
     padding: 40px;
 }
 
@@ -185,15 +185,15 @@ header .info-text .scroll::before{
 }
 
 @media screen and (max-width: 720px) {
-    header .info-text h1{
+    header .info-text h1, .connect-link{
         font-size: 4rem;
     }
 
-    header .info-text h3{
+    header .info-text h3, .connect-link{
         font-size: 1.1rem;
     }
 
-    #about .card{
+    #about .card, .connect-link{
         flex-direction: column;
         align-items: center;
     }
@@ -205,44 +205,41 @@ header .info-text .scroll::before{
 
 }
 
-.link-telegram:hover, .tg{
+.link:hover, .icon{
     filter: invert(000%) sepia(000%) saturate(0%) hue-rotate(1deg) brightness(00%) contrast(100%);
 }
-.link-telegram:hover{
+/* .link-telegram:hover{
     width: 13rem;
-    margin-left: 0rem;
-}
-.tg{
-    margin-left: 5rem;
+   
+} */
+.icon{
     width: 2rem;
-      height: 2rem;
-      filter: invert(100%) sepia(100%) saturate(1300%) hue-rotate(10deg) brightness(50%) contrast(100%);
+    height: 2rem;
+    filter: invert(100%) sepia(100%) saturate(1300%) hue-rotate(10deg) brightness(50%) contrast(100%);
   }
-  .telegram{
-    color: rgb(22, 87, 185);
-    text-decoration: none;
-    font-size: 18px;
+  .name-link{
     box-sizing: border-box;
-    text-decoration: none;
 }
-.link-telegram{
+.link{
     text-decoration: none;
     justify-content: center;
     align-items: center;    
     text-align: center;
     display: flex;
     gap: 1rem;
-    margin-left: 5rem;
-    width: 3rem;
+    
     overflow: hidden;
-    filter: invert(100%) sepia(000%) saturate(10%) hue-rotate(1deg) brightness(100%) contrast(100%);
+    filter: invert(000%) sepia(000%) saturate(0%) hue-rotate(1deg) brightness(150%) contrast(1000%);
     transition: all 0.5s;
 }
 .connect-link{
+    padding: 40px;
+    opacity: 0.8;
+    border: 1px solid transparent;
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 5rem;
-    margin-top: -2rem;
+    gap: 2rem ;
 }
 @keyframes pulse-text {
     0%, 100%{
@@ -257,3 +254,42 @@ header .info-text .scroll::before{
     text-decoration: none;
     animation: pulse-text 2s infinite;
 }
+#toggle-theme{
+    display: block;
+    position: fixed;
+    padding: 0.5rem;
+    margin: 0.75rem;
+    z-index: 1;
+    border-radius: 0.5rem;
+}
+:root{
+    --header-bg-color: #252536;
+    --section-bg-color:#252536;
+    --text-color:#ffffff;
+    --panel-bg-color: #253626;
+  }
+  :root[theme='dark'] {
+    --header-bg-color: #253626;
+    --section-bg-color:#253626;
+    --text-color:#ffffff;
+    --panel-bg-color: #252536;
+  }
+  input[type=button] {
+    color: var(--text-color);
+    background: var(--panel-bg-color);
+  }
+  
+  .button {
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+
