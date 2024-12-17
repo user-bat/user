@@ -265,10 +265,9 @@ header .info-text .scroll::before{
 #toggle-theme{
     display: block;
     position: fixed;
-    padding: 0.5rem;
-    margin-left: 37.25%;
+    padding: 1rem;
+    margin-left: 2rem;
     margin-top: 1%;
-    z-index: 1;
     border-radius: 0.5rem;
 }
 :root{
@@ -293,17 +292,17 @@ header .info-text .scroll::before{
   
   .button {
     font-size: 1rem;
-    font-weight: 4  00;
+    font-weight: 400;
     font-family: 'Ubuntu';
-    width: 25%;
-    height: 50px;
+    min-width: 5%;
     border: none;
     outline: none;
     background: #ffffff;
     cursor: pointer;
     position: relative;
-    z-index: 0;
+    z-index: 1;
     border-radius: 10px;
+    text-transform: capitalize;
 }
 
 
