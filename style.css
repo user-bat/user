@@ -258,7 +258,8 @@ header .info-text .scroll::before{
     display: block;
     position: fixed;
     padding: 0.5rem;
-    margin: 0.75rem;
+    margin-left: 25%;
+    margin-top: 1%;
     z-index: 1;
     border-radius: 0.5rem;
 }
@@ -282,7 +283,7 @@ header .info-text .scroll::before{
   }
   
   .button {
-    width: 100px;
+    width: 50%;
     height: 50px;
     border: none;
     outline: none;
