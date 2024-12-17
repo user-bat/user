@@ -170,8 +170,8 @@ header .info-text .scroll::before{
     right: 20px;
     background-color: var(--header-bg-color);
     color: var(--text-color);
-    border: 2px solid transparent;
-    box-shadow: 0 0px 15px var(--text-color);
+    border: 1px solid transparent;
+    box-shadow: 0 0px 20px var(--scroll-shadow-color);
     padding: 16px 18px;
     border-radius: 50%;
     cursor: pointer;
@@ -268,12 +268,15 @@ header .info-text .scroll::before{
     --section-bg-color:#131313;
     --text-color:#ffffff;
     --panel-bg-color: #646464;
+    --scroll-shadow-color:rgba(255, 255, 255, 0.404);
   }
   :root[theme='dark'] {
     --header-bg-color: #535353;
     --section-bg-color:#535353;
     --text-color:#000000;
     --panel-bg-color: #fafafa;
+    --scroll-shadow-color:rgba(0, 0, 0, 0.404);
+    
   }
   input[type=button] {
     color: var(--text-color);
