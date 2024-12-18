@@ -9,6 +9,7 @@ html{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    transition: all 1.5s;
 }
 
 body{
@@ -266,7 +267,7 @@ header .info-text .scroll::before{
   
   .name-text {
     text-decoration: none;
-    animation: pulse-text 2s infinite;
+    animation: pulse-text 1.5s infinite;
   }
   
   #toggle-theme {
@@ -284,13 +285,10 @@ header .info-text .scroll::before{
     --text-color: #ffffff;
     --panel-bg-color: #646464;
     --scroll-shadow-color: rgba(255, 255, 255, 0.404);
-    
-    transition: all 2s ease; /* Применяем общий переход ко всем свойствам */
   }
-  
   .dark-theme {
-    --header-bg-color: #535353;
-    --section-bg-color: #535353;
+    --header-bg-color: #7a7a7a;
+    --section-bg-color: #7a7a7a;
     --text-color: #000000;
     --panel-bg-color: #fafafa;
     --scroll-shadow-color: rgba(0, 0, 0, 0.404);
