@@ -13,6 +13,8 @@ html{
 
 body{
     font-size: 14px;
+    background-color: var(--default-bg-color); /* Определите цвет по умолчанию */
+    transition: background-color 2s ease; /* Плавный переход для заднего фона */
 }
 
 header{
@@ -91,6 +93,7 @@ header .info-text .scroll::before{
 }
 
 #about, #features{
+    animation-delay: 1.5s;
     background-color:  var(--section-bg-color);
     padding: 40px;
     
@@ -108,6 +111,7 @@ header .info-text .scroll::before{
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
+    animation: fade 1s ease-in;
 }
 
 #about .header a, .header a{
@@ -214,77 +218,84 @@ header .info-text .scroll::before{
 }
 
 .link:hover {
-   transform: scale(1.5);
+    transform: scale(1.5);
     padding-left: 2rem;
     padding-right: 2rem;
-}
-
-.icon{
+  }
+  
+  .icon {
     width: 1.75rem;
     height: 1.75rem;
     filter: invert(100%) sepia(100%) saturate(1300%) hue-rotate(10deg) brightness(50%) contrast(100%);
-    
   }
-  .name-link{
+  
+  .name-link {
     box-sizing: border-box;
-}
-.link{
+  }
+  
+  .link {
     text-decoration: none;
     justify-content: center;
     align-items: center;    
     text-align: center;
     display: flex;
     gap: 1rem;
-    
     overflow: hidden;
-    filter: invert(000%) sepia(000%) saturate(0%) hue-rotate(1deg) brightness(150%) contrast(1000%);
-    transition: all 0.5s;
-}
-.connect-link{
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(1deg) brightness(150%) contrast(1000%);
+    transition: all 0.5s; /* Плавный переход для всех свойств */
+  }
+  
+  .connect-link {
     padding: 40px;
     opacity: 0.8;
     border: 1px solid transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.2rem ;
-}
-@keyframes pulse-text {
-    0%, 100%{
-        color: #5e5e5e;
+    gap: 1.2rem;
+  }
+  
+  @keyframes pulse-text {
+    0%, 100% {
+      color: #5e5e5e;
     }
-    30%, 60%{
-        color: #ccffbdab;
+    30%, 60% {
+      color: #ccffbdab;
     }
-
-}
-.name-text{
+  }
+  
+  .name-text {
     text-decoration: none;
     animation: pulse-text 2s infinite;
-}
-#toggle-theme{
+  }
+  
+  #toggle-theme {
     display: block;
     position: fixed;
     padding: 1rem;
     margin-left: 2rem;
     margin-top: 1%;
     border-radius: 0.5rem;
-}
-:root{
+  }
+  
+  :root {
     --header-bg-color: #131313;
-    --section-bg-color:#131313;
-    --text-color:#ffffff;
+    --section-bg-color: #131313;
+    --text-color: #ffffff;
     --panel-bg-color: #646464;
-    --scroll-shadow-color:rgba(255, 255, 255, 0.404);
-  }
-  :root[theme='dark'] {
-    --header-bg-color: #535353;
-    --section-bg-color:#535353;
-    --text-color:#000000;
-    --panel-bg-color: #fafafa;
-    --scroll-shadow-color:rgba(0, 0, 0, 0.404);
+    --scroll-shadow-color: rgba(255, 255, 255, 0.404);
     
+    transition: all 2s ease; /* Применяем общий переход ко всем свойствам */
   }
+  
+  .dark-theme {
+    --header-bg-color: #535353;
+    --section-bg-color: #535353;
+    --text-color: #000000;
+    --panel-bg-color: #fafafa;
+    --scroll-shadow-color: rgba(0, 0, 0, 0.404);
+  }
+  
   input[type=button] {
     color: var(--text-color);
     background: var(--panel-bg-color);
@@ -303,6 +314,33 @@ header .info-text .scroll::before{
     z-index: 1;
     border-radius: 10px;
     text-transform: capitalize;
+  }
+  
+  .price {
+    color: #ffffff;
+    padding-top: 1.5rem;
+    animation: price-text 2s infinite;
+  }
+  
+  @keyframes price-text {
+    0%, 100% {
+      font-size: 25px;
+      color: rgb(255, 120, 120);
+    }
+    30%, 60% {
+      font-size: 20px;  
+      color: white;  
+    }
+  }
+  
+  @keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-
 
