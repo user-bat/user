@@ -286,6 +286,7 @@ header .info-text .scroll::before{
     border-radius: 100rem;
     width: 4rem;
     background-color: var(--panel-bg-color);
+    transition:  all 2s;
   }
   
   :root {
@@ -378,11 +379,5 @@ header .info-text .scroll::before{
 }
 .theme-icon {
   cursor: pointer;
-  /* background: transparent;  */
-  /* border: none;  */
-  /* outline: none;  */
   z-index: 1;
-  /* transition: all 3s; */
-  /* background-color: #000000; */
-  /* border-radius: 50rem; */
 }
