@@ -283,7 +283,9 @@ header .info-text .scroll::before{
     padding: 1rem;
     margin-left: 2rem;
     margin-top: 1%;
-    border-radius: 0.5rem;
+    border-radius: 100rem;
+    width: 4rem;
+    background-color: var(--panel-bg-color);
   }
   
   :root {
@@ -297,7 +299,7 @@ header .info-text .scroll::before{
     --header-bg-color: #7a7a7a;
     --section-bg-color: #7a7a7a;
     --text-color: #000000;
-    --panel-bg-color: #fafafa;
+    --panel-bg-color: #474747;
     --scroll-shadow-color: rgba(0, 0, 0, 0.404);
   }
   
@@ -374,4 +376,13 @@ header .info-text .scroll::before{
     animation-iteration-count: ease-in;
   }
 }
-
+.theme-icon {
+  cursor: pointer;
+  /* background: transparent;  */
+  /* border: none;  */
+  /* outline: none;  */
+  z-index: 1;
+  /* transition: all 3s; */
+  /* background-color: #000000; */
+  /* border-radius: 50rem; */
+}
