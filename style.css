@@ -380,4 +380,52 @@ header .info-text .scroll::before{
 .theme-icon {
   cursor: pointer;
   z-index: 1;
+  
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.theme-icon_animate_1 {
+  animation: 1s animate forwards;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.theme-icon_animate_2 {
+  animation: 1s animate_2 forwards;
+}
+
+@keyframes animate_2 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
