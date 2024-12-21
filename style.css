@@ -224,6 +224,21 @@ header .info-text .scroll::before{
     }
 
 }
+@media screen and (max-width: 720px) {
+  .connect-link{
+      font-size: 4rem;
+  }
+
+  .connect-link{
+      font-size: 1.1rem;
+  }
+
+  .link{
+      flex-direction: column;
+      align-items:start;
+  }
+
+}
 
 .link:hover {
     transform: scale(1.5);
