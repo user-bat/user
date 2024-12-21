@@ -22,7 +22,7 @@ header{
     width: 100%;
     height: 100vh;
     background-color:  var(--header-bg-color);
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 header #particles{
@@ -56,7 +56,7 @@ header .info-text .scroll{
     position: absolute;
     bottom: 20%;
     left: 50%;
-    color: #ffffff;
+    color: var(--text-color);
     transform: translate(0, -50%);
     transition: all 0.5s;
 }
@@ -104,7 +104,6 @@ header .info-text .scroll::before{
     animation-delay: 1.5s;
     background-color:  var(--section-bg-color);
     padding: 40px;
-    
 }
 
 #about .header,  .header{
@@ -117,7 +116,7 @@ header .info-text .scroll::before{
 
 #about .header h1,  .header h1{
     text-align: center;
-    color: #ffffff;
+    color: var(--text-color);
     text-transform: uppercase;
     /* animation: fade 2s ease-in; */
 }
@@ -126,7 +125,7 @@ header .info-text .scroll::before{
    
     text-decoration: none;
     font-size: 1.3em;
-    color: #ffffff;
+    color: var(--text-color);
     border: 1px solid transparent;
     padding: 10px 50px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
@@ -141,7 +140,7 @@ header .info-text .scroll::before{
 
 #about .card,  .card{
     padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 5px 15px var(--scroll-shadow-color);
     border-radius: 20px;
     display: flex;
     gap: 30px;
@@ -169,7 +168,7 @@ header .info-text .scroll::before{
 
 #about .card .info h1,  .card .info h1{
     margin-bottom: 20px;
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 1.7rem;
     font-weight: bold;
     font-family: 'Ubuntu';
@@ -177,7 +176,7 @@ header .info-text .scroll::before{
 }
 
 #about .card .info p, .card .info p{
-    color: #ffffff;
+  color: var(--text-color);
     font-size: 1.25rem;
     line-height: 1.8rem;
     
@@ -338,9 +337,8 @@ header .info-text .scroll::before{
     border-radius: 10px;
     text-transform: capitalize;
   }
-  
   .price {
-    color: #ffffff;
+    color: var(-text-color);
     padding-top: 1.5rem;
     animation: price-text 2s infinite;
   }
@@ -352,7 +350,7 @@ header .info-text .scroll::before{
     }
     30%, 60% {
       font-size: 20px;  
-      color: white;  
+      color: var(--text-color);
     }
   }
   
@@ -421,13 +419,20 @@ header .info-text .scroll::before{
 }
 
 @keyframes animate {
-  0% {
+  0%{
+    scale: 0;
+    opacity: 0;
     transform: translateX(0);
   }
   50% {
+    opacity: 0.5;
+    scale: 0.5;
     transform: translateX(50px);
+    
   }
   100% {
+    opacity: 1;
+    scale: 1;
     transform: translateX(0);
   }
 }
@@ -438,9 +443,17 @@ header .info-text .scroll::before{
 
 @keyframes animate_2 {
   0% {
+    scale: 0.1;
+    opacity: 0.1;
     transform: rotate(0);
   }
   100% {
+    opacity: 1;
+    scale: 1;
     transform: rotate(360deg);
   }
+  
+}
+.inverted {
+  filter: invert(100%);
 }
