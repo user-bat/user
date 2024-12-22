@@ -311,8 +311,8 @@ header .info-text .scroll::before{
     --scroll-shadow-color: rgba(255, 255, 255, 0.404);
   }
   .dark-theme {
-    --header-bg-color: #7a7a7a;
-    --section-bg-color: #7a7a7a;
+    --header-bg-color: #adadad;
+    --section-bg-color: #adadad;
     --text-color: #000000;
     --panel-bg-color: #474747;
     --scroll-shadow-color: rgba(0, 0, 0, 0.404);
