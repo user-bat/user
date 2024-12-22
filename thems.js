@@ -23,10 +23,10 @@ toggleBtn.addEventListener("click", function() {
   if (document.documentElement.classList.contains("dark-theme")) {
     document.documentElement.classList.remove("dark-theme");
     localStorage.removeItem('theme');
-    themeIcon.src = "sun.svg";  // Изменяем на солнце
+    themeIcon.src = "sun.svg";  
   } else {
     document.documentElement.classList.add("dark-theme");
     localStorage.setItem('theme', 1);
-    themeIcon.src = "moon.svg";  // Изменяем на луне
+    themeIcon.src = "moon.svg";  
   }
 });

@@ -393,66 +393,39 @@ header .info-text .scroll::before{
 .theme-icon {
   cursor: pointer;
   z-index: 1;
-  
-}
-
-@keyframes rot {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes rot {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-
-.theme-icon_animate_1 {
-  animation: 1s animate forwards;
-}
-
-@keyframes animate {
-  0%{
-    scale: 0;
-    opacity: 0;
-    transform: translateX(0);
-  }
-  50% {
-    opacity: 0.5;
-    scale: 0.5;
-    transform: translateX(50px);
-    
-  }
-  100% {
-    opacity: 1;
-    scale: 1;
-    transform: translateX(0);
-  }
 }
 
 .theme-icon_animate_2 {
-  animation: 1s animate_2 forwards;
+  animation: 2s animate_2 forwards;
+  transition: all 2s;
 }
 
 @keyframes animate_2 {
   0% {
-    scale: 0.1;
-    opacity: 0.1;
+    scale: 1;
     transform: rotate(0);
   }
+  50%{
+    scale: 1.3;
+  }
   100% {
-    opacity: 1;
-    scale: 1;
+    scale:  1;
     transform: rotate(360deg);
   }
   
+}
+@-webkit-keyframes animate_2{
+  0% {
+    scale: 1;
+    transform: rotate(0);
+  }
+  50%{
+    scale: 1.3;
+  }
+  100% {
+    scale:  1;
+    transform: rotate(360deg);
+  }
 }
 .inverted {
   filter: invert(100%);
