@@ -295,7 +295,7 @@ header .info-text .scroll::before{
     position: fixed;
     padding: 0.5rem;
     margin-left: 2rem;
-    margin-top: 1%;
+    margin-top: 1rem;
     border-radius: 100rem;
     width: 3rem;
     background-color: var(--panel-bg-color);
@@ -306,7 +306,7 @@ header .info-text .scroll::before{
     position: fixed;
     padding: 0.5rem;
     margin-left: 2rem;
-    margin-top: 5%;
+    margin-top: 5rem;
     border-radius: 100rem;
     width: 3rem;
     background-color: var(--panel-bg-color);
