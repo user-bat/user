@@ -291,26 +291,13 @@ header .info-text .scroll::before{
   }
   
   #toggle-theme {
-    display: block;
-    position: fixed;
     padding: 0.5rem;
-    margin-left: 2rem;
-    margin-top: 1rem;
-    border-radius: 100rem;
     width: 3rem;
-    background-color: var(--panel-bg-color);
     transition:  all 1s;
   }
   #toggle-audio{
-    display: block;
-    position: fixed;
     padding: 0.5rem;
-    margin-left: 2rem;
-    margin-top: 5rem;
-    border-radius: 100rem;
     width: 3rem;
-    background-color: var(--panel-bg-color);
-    transition:  all 1s;
   }
   :root {
     --header-bg-color: #131313;
@@ -447,21 +434,20 @@ header .info-text .scroll::before{
 .inverted {
   filter: invert(100%);
 }
-#counter{
-  color: var(--text-color);
-  display: block;
-  position: fixed;
-  padding: 0.5rem;
-  margin-left: 95%;
+
+.panel-setting{
+  width: 50%;
+  margin-left: 25%;
   margin-top: 1%;
-  border-radius: 100rem;
-  width: 3rem;
-}
-#toggle-eye{
-  display: block;
+  border-radius: 20px;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  display: flex;
   position: fixed;
-  padding: 0rem;
-  margin-left: 93%;
-  margin-top: 1%;
-  width: 3.5rem;
+  background-color: var(--panel-bg-color);
+  gap: 10%;
+  transition: all 1s;
+
 }
