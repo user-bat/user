@@ -318,7 +318,6 @@ header .info-text .scroll::before{
     --text-color: #ffffff;
     --panel-bg-color: #646464;
     --scroll-shadow-color: rgba(255, 255, 255, 0.404);
-    --eye: filter(100%)
   }
   .dark-theme {
     --header-bg-color: #adadad;
@@ -326,7 +325,6 @@ header .info-text .scroll::before{
     --text-color: #000000;
     --panel-bg-color: #474747;
     --scroll-shadow-color: rgba(0, 0, 0, 0.404);
-    --eye: #00000
   }
   
   input[type=button] {
@@ -449,20 +447,21 @@ header .info-text .scroll::before{
 .inverted {
   filter: invert(100%);
 }
+#counter{
+  color: var(--text-color);
+  display: block;
+  position: fixed;
+  padding: 0.5rem;
+  margin-left: 95%;
+  margin-top: 1%;
+  border-radius: 100rem;
+  width: 3rem;
+}
 #toggle-eye{
   display: block;
   position: fixed;
+  padding: 0rem;
+  margin-left: 93%;
+  margin-top: 1%;
   width: 3.5rem;
-  
-}
-.eye{
-  font-family: "Ubuntu";
-  font-size: 16px;
-  margin-left: 3rem;
-  margin-top: 9.5rem;
-  color: var(--text-color);
-  display: flex;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
 }
