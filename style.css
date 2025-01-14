@@ -14,8 +14,8 @@ html{
 
 body{
     font-size: 14px;
-    background-color: var(--default-bg-color); /* Определите цвет по умолчанию */
-    transition: background-color 2s ease; /* Плавный переход для заднего фона */
+    background-color: var(--default-bg-color); 
+    transition: background-color 2s ease; 
 }
 
 header{
@@ -111,14 +111,13 @@ header .info-text .scroll::before{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
-    /* animation: fade 2s ease-in; */
+
 }
 
 #about .header h1,  .header h1{
     text-align: center;
     color: var(--text-color);
     text-transform: uppercase;
-    /* animation: fade 2s ease-in; */
 }
 
 #about .header a, .header a{
@@ -264,7 +263,7 @@ header .info-text .scroll::before{
     gap: 1rem;
     overflow: hidden;
     filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(1deg) brightness(150%) contrast(1000%);
-    transition: all 0.5s; /* Плавный переход для всех свойств */
+    transition: all 0.5s; 
   }
   
   .connect-link {
@@ -294,15 +293,25 @@ header .info-text .scroll::before{
   #toggle-theme {
     display: block;
     position: fixed;
-    padding: 1rem;
+    padding: 0.5rem;
     margin-left: 2rem;
     margin-top: 1%;
     border-radius: 100rem;
-    width: 4rem;
+    width: 3rem;
     background-color: var(--panel-bg-color);
-    transition:  all 2s;
+    transition:  all 1s;
   }
-  
+  #toggle-audio{
+    display: block;
+    position: fixed;
+    padding: 0.5rem;
+    margin-left: 2rem;
+    margin-top: 5%;
+    border-radius: 100rem;
+    width: 3rem;
+    background-color: var(--panel-bg-color);
+    transition:  all 1s;
+  }
   :root {
     --header-bg-color: #131313;
     --section-bg-color: #131313;
@@ -394,10 +403,18 @@ header .info-text .scroll::before{
   cursor: pointer;
   z-index: 1;
 }
+.audio-icon{
+  cursor: pointer;
+  z-index: 1;
+}
 
 .theme-icon_animate_2 {
-  animation: 2s animate_2 forwards;
-  transition: all 2s;
+  animation: 1s animate_2 forwards;
+  transition: all 1s;
+}
+.audio-icon_animate_2{
+  animation: 1s animate_2 forwards;
+  transition: all 1s;
 }
 
 @keyframes animate_2 {
@@ -406,7 +423,7 @@ header .info-text .scroll::before{
     transform: rotate(0);
   }
   50%{
-    scale: 1.15;
+    scale: 1.25;
   }
   100% {
     scale:  1;
