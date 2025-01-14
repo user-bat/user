@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="./counter.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="Faska website.">
     <link rel="shortcut icon" href="./icon.png">
@@ -12,10 +13,15 @@
 </head>
 
 <body>
+    
     <audio id="myAudio" autoplay loop src="./Hibiscus-chosic.com_.mp3"></audio>
     <div class="panel-setting">
         <input type="image" src="./sun.svg" alt="Toggle Theme" id="toggle-theme" class="theme-icon" />
         <input type="image" src="./volume_on.svg" alt="Toggle Audio" id="toggle-audio" class="audio-icon">
+        <div class="eye">
+            <input type="image" src="./eye.svg" alt="Toggle Eye" id="toggle-eye" class="eye-icon">
+            <span id="counter">0</span>
+        </div>
     </div>
 
     <header>
