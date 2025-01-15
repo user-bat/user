@@ -258,6 +258,7 @@ header .info-text .scroll::before{
     stroke-width:inherit;
     }
   .name-link {
+    display: flex;
     box-sizing: border-box;
   }
   
