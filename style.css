@@ -348,11 +348,9 @@ header .info-text .scroll::before{
   
   @keyframes price-text {
     0%, 100% {
-      font-size: 25px;
       color: rgb(255, 120, 120);
     }
     30%, 60% {
-      font-size: 20px;  
       color: var(--text-color);
     }
   }
@@ -456,7 +454,7 @@ header .info-text .scroll::before{
   background-color: var(--panel-bg-color);
   gap: 10%;
   transition: all 1s;
-  animation: panel-loading 1s ;
+  animation: panel-loading 2s ;
 }
 @keyframes panel-loading {
   0%{
