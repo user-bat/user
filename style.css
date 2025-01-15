@@ -449,5 +449,15 @@ header .info-text .scroll::before{
   background-color: var(--panel-bg-color);
   gap: 10%;
   transition: all 1s;
-
+  animation: panel-loading 1s ;
+}
+@keyframes panel-loading {
+  0%{
+    margin-left: 50%;
+    width: 0%;
+  }
+  100%{
+    margin-left: 25%;
+    width: 50%;
+  }
 }
