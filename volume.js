@@ -3,7 +3,7 @@
   var toggleButton = document.getElementById('toggle-audio');
 
  isAudioPlaying = true; 
-  audio.volume=0.25;
+  audio.volume=0.05;
   
   toggleButton.addEventListener('click', function() {
       if (isAudioPlaying) {
