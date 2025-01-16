@@ -237,28 +237,19 @@ header .info-text .scroll::before{
   }
 
 }
-
-.link:hover {
-    transform: scale(1.5);
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  
+   
   .icon {
     width: 1.75rem;
     height: 1.75rem;
     transition: all 1s;
   }
   .link:hover>.icon{
+    transform: scale(1.5);
     transform: rotate(360deg);
   }
-  svg path {
-    fill:inherit;
-    stroke:inherit;
-    stroke-width:inherit;
-    }
   .name-link {
-    display: flex;
+    font-weight: 100;
+    display: none;
     box-sizing: border-box;
   }
   
@@ -270,7 +261,7 @@ header .info-text .scroll::before{
     display: flex;
     gap: 1rem;
     overflow: hidden;
-    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(1deg) brightness(150%) contrast(1000%);
+    /* filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(1deg) brightness(150%) contrast(1000%); */
     transition: all 0.5s; 
   }
   
@@ -281,7 +272,7 @@ header .info-text .scroll::before{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.2rem;
+    gap: 2rem;
   }
   
   @keyframes pulse-text {
@@ -311,14 +302,14 @@ header .info-text .scroll::before{
     --header-bg-color: #131313;
     --section-bg-color: #131313;
     --text-color: #ffffff;
-    --panel-bg-color: #646464;
+    --panel-bg-color: #414141;
     --scroll-shadow-color: rgba(255, 255, 255, 0.404);
   }
   .dark-theme {
     --header-bg-color: #adadad;
     --section-bg-color: #adadad;
     --text-color: #000000;
-    --panel-bg-color: #474747;
+    --panel-bg-color: #292929;
     --scroll-shadow-color: rgba(0, 0, 0, 0.404);
   }
   
