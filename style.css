@@ -139,7 +139,7 @@ header .info-text .scroll::before{
 
 #about .card,  .card{
     padding: 30px;
-    box-shadow: 0 5px 15px var(--scroll-shadow-color);
+    box-shadow: 0 0px 15px var(--scroll-shadow-color);
     border-radius: 20px;
     display: flex;
     gap: 30px;
@@ -189,7 +189,7 @@ header .info-text .scroll::before{
     background-color: var(--header-bg-color);
     color: var(--text-color);
     border: 1px solid transparent;
-    box-shadow: 0 0px 20px var(--scroll-shadow-color);
+    box-shadow: 0 0px 15px var(--scroll-shadow-color);
     padding: 16px 18px;
     border-radius: 50%;
     cursor: pointer;
@@ -302,15 +302,15 @@ header .info-text .scroll::before{
     --header-bg-color: #131313;
     --section-bg-color: #131313;
     --text-color: #ffffff;
-    --panel-bg-color: #414141;
-    --scroll-shadow-color: rgba(255, 255, 255, 0.404);
+    --panel-bg-color: #292929;
+    --scroll-shadow-color: rgba(0, 0, 0, 0.150);
   }
   .dark-theme {
     --header-bg-color: #adadad;
     --section-bg-color: #adadad;
     --text-color: #000000;
-    --panel-bg-color: #292929;
-    --scroll-shadow-color: rgba(0, 0, 0, 0.404);
+    --panel-bg-color: #414141; 
+    --scroll-shadow-color: rgba(0, 0, 0, 0.150);
   }
   
   input[type=button] {
