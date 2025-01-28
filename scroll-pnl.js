@@ -7,7 +7,7 @@ window.addEventListener('scroll', function () {
         scrollTopButton.style.borderRadius = '0px';
         scrollTopButton.style.height='5rem';
         scrollTopButton.style.boxShadow='0 5px 10px var(--panel-bg-color)'
-        scrollTopButton.style.filter='opacity(0.90)'
+        scrollTopButton.style.filter='opacity(0.95)'
 
     } else {
         scrollTopButton.style.width = '50%';
