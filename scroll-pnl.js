@@ -10,7 +10,7 @@ window.addEventListener('scroll', function () {
         scrollTopButton.style.filter='opacity(0.90)'
 
     } else {
-        scrollTopButton.style.width = '72.5%';
+        scrollTopButton.style.width = '70%';
         scrollTopButton.style.marginLeft = '15%';
         scrollTopButton.style.marginTop = '1%';
         scrollTopButton.style.borderRadius = '15px';
