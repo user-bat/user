@@ -11,7 +11,7 @@ window.addEventListener('scroll', function () {
 
     } else {
         scrollTopButton.style.width = '75%';
-        scrollTopButton.style.marginLeft = '5%';
+        scrollTopButton.style.marginLeft = '10%';
         scrollTopButton.style.marginTop = '1%';
         scrollTopButton.style.borderRadius = '15px';
         scrollTopButton.style.height='2.5rem';
